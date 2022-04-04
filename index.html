@@ -12,12 +12,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/carrousel.css" />
     <title>ADB Graphisme</title>
   </head>
   <body>
-    <header class="d-flex justify-content-between">
-      <div id="menu" class="p-4">
+    <header class="row">
+      <div id="menu" class="col-sm-12 col-md-8 p-4 ps-5">
         <img src="Ressources/img/logo.webp" alt="ADBGraphisme" />
         <div id="jobs">
           <h1>ADB GRAPHISME</h1>
@@ -41,13 +40,19 @@
         </nav>
       </div>
 
-      <div class="pic-ctn">
-        <img src="Ressources/img/caroussel/5155240.jpg" alt="" class="pic" />
-        <img src="Ressources/img/caroussel/53.jpg" alt="" class="pic" />
-        <img src="Ressources/img/caroussel/59.jpg" alt="" class="pic" />
-        <img src="Ressources/img/caroussel/59.jpg" alt="" class="pic" />
-        <img src="Ressources/img/caroussel/59.jpg" alt="" class="pic" />
-      </div>
+      <!-- <div class="col-sm-12 col-md-4 slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="Ressources/img/caroussel/60.jpg" class="img-fluid" />
+          </div>
+          <div class="slide">
+            <img src="Ressources/img/caroussel/53.jpg" class="img-fluid" />
+          </div>
+          <div class="slide">
+            <img src="Ressources/img/caroussel/59.jpg" class="img-fluid" />
+          </div>
+        </div>
+      </div> -->
     </header>
     <main>
       <div id="a_propos">
@@ -68,7 +73,33 @@
       </div>
       <div id="service">
         <h3>SERVICES</h3>
-        <div class="d-flex"></div>
+        <div class="d-flex justify-content-around">
+          <div class="service">
+            <img
+              src="Ressources/img/services/print.png"
+              alt="Communication support imprimé"
+            />
+            <div class="legend">Communication support imprimé</div>
+          </div>
+          <div class="service">
+            <img
+              src="Ressources/img/services/webdesign.png"
+              alt="Communication support web"
+            />
+            <div class="legend">Communication support web</div>
+          </div>
+          <div class="service">
+            <img src="Ressources/img/services/motion.png" alt="Motion Design" />
+            <div class="legend">Motion Design</div>
+          </div>
+          <div class="service">
+            <img
+              src="Ressources/img/services/illustration.png"
+              alt="Illustration"
+            />
+            <div class="legend">Illustration</div>
+          </div>
+        </div>
       </div>
       <div id="portfolio">
         <h3>PORTFOLIO</h3>
@@ -76,7 +107,6 @@
       <div id="contact">
         <h3>CONTACT</h3>
       </div>
-      <div id="footer"></div>
     </main>
     <footer></footer>
 
