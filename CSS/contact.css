@@ -1,0 +1,56 @@
+#logo {
+  margin: 2% 0 0 2%;
+  height: 150px;
+}
+#logo img {
+  height: 100%;
+}
+
+.contact {
+  width: 60%;
+  margin: 0 auto 2em;
+  background-color: #f1eae0;
+  padding: 3%;
+}
+
+.contact h3 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.contact p {
+  color: #8db5ad;
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #8db5ad;
+}
+
+input,
+textarea {
+  border: 2px solid #8db5ad;
+  margin-bottom: 25px;
+  padding: 10px;
+  transition: 0.5s ease;
+}
+
+input[type="submit"] {
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #e93119;
+}

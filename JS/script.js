@@ -15,3 +15,21 @@ new Typewriter(txtAnim, {
   .pauseFor(1000)
   .deleteChars(15)
   .start();
+
+document.getElementById("scrollToTop").addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+document.getElementById("scrollToTop").style.cursor = "pointer";
+
+let scrollPercentage = () => {
+  let scrollProgress = document.getElementById("scrollToTop");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+
+  scrollProgress.style.background = `conic-gradient(#e93119 ${scrollValue}%,rgba(0,0,0,0) ${scrollValue}%)`;
+};
+window.onscroll = scrollPercentage;
