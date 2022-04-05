@@ -36,13 +36,13 @@ let scrollPercentage = () => {
 
   scrollProgress.style.background = `conic-gradient(#e93119 ${scrollValue}%,rgba(0,0,0,0) ${scrollValue}%)`;
 
-  if (scrollValue > 20) {
+  if (scrollValue > 10) {
     scrollImg.style.opacity = 1;
   } else {
     scrollImg.style.opacity = 0;
   }
 
-  if (scrollValue > 25) {
+  if (scrollValue > 10) {
     scrollProgress.style.opacity = 1;
     scrollWhite.style.opacity = 1;
   } else {
