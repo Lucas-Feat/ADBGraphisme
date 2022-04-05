@@ -18,11 +18,18 @@
   font-weight: 600;
 }
 
-.contact p {
+.contact p,
+.contact a {
+  text-decoration: none;
   color: #8db5ad;
   font-size: 1.3em;
   text-align: center;
   margin-top: 2em;
+}
+
+.contact a {
+  display: block;
+  margin-left: auto;
 }
 
 form {
