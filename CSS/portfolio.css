@@ -1,0 +1,100 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #featureContainer .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  #featureContainer .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+#featureContainer .carousel-inner .carousel-item.active,
+#featureContainer .carousel-inner .carousel-item-next,
+#featureContainer .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  #featureContainer .carousel-inner .carousel-item-end.active,
+  #featureContainer .carousel-inner .carousel-item-next {
+    transform: translateX(33.3333%);
+  }
+
+  #featureContainer .carousel-inner .carousel-item-start.active,
+  #featureContainer .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.3333%);
+  }
+  #carouselInner img {
+    height: 50vh;
+  }
+}
+@media (max-width: 767px) {
+  #featureContainer .card img {
+    height: 75vh;
+  }
+}
+#featureContainer .carousel-inner .carousel-item-end,
+#featureContainer .carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+.carousel-control-prev {
+  transform: translateX(-200px);
+}
+
+#prev {
+  transform: rotate(-90deg) scale(0.7);
+}
+#next {
+  transform: rotate(90deg) scale(0.7);
+}
+
+.carousel-control-next {
+  transform: translateX(200px);
+}
+
+.hover_portfolio {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+.hover_portfolio:hover {
+  opacity: 1;
+}
+
+.hover_portfolio h4 {
+  color: #e93119;
+  font-weight: 900;
+  font-size: 1.8em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

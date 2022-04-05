@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/portfolio.css" />
     <title>ADB Graphisme</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
         <img src="Ressources/img/logo.webp" alt="ADBGraphisme" />
         <div id="jobs">
           <h1>ADB GRAPHISME</h1>
-          <h2></h2>
+          <span id="typewriter" class="h2"></span>
         </div>
         <nav>
           <ul>
@@ -45,16 +46,29 @@
         </nav>
       </div>
 
-      <div class="col-sm-12 col-md-4 p-0 carousel slide" id="carousel" data-bs-ride="carousel">
+      <div
+        class="col-sm-12 col-md-4 p-0 carousel slide"
+        id="carousel"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="Ressources/img/caroussel/slide-1.jpg" class="d-block w-100" />
+            <img
+              src="Ressources/img/caroussel/slide-1.jpg"
+              class="d-block w-100"
+            />
           </div>
           <div class="carousel-item">
-            <img src="Ressources/img/caroussel/slide-2.jpg" class="d-block w-100" />
+            <img
+              src="Ressources/img/caroussel/slide-2.jpg"
+              class="d-block w-100"
+            />
           </div>
           <div class="carousel-item">
-            <img src="Ressources/img/caroussel/slide-3.jpg" class="d-block w-100" />
+            <img
+              src="Ressources/img/caroussel/slide-3.jpg"
+              class="d-block w-100"
+            />
           </div>
           <div class="carousel-item">
             <img src="Ressources/img/caroussel/53.jpg" class="d-block w-100" />
@@ -111,6 +125,104 @@
       </div>
       <div id="portfolio">
         <h3>PORTFOLIO</h3>
+        <div class="container" id="featureContainer">
+          <div class="row mx-auto my-auto justify-content-center">
+            <div
+              id="featureCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#featureCarousel"
+                data-bs-slide="prev"
+              >
+                <img src="Ressources/img/scrollToTop.png" id="prev" />
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#featureCarousel"
+                data-bs-slide="next"
+              >
+                <img src="Ressources/img/scrollToTop.png" id="next" />
+                <span class="visually-hidden">Next</span>
+              </button>
+              <div class="carousel-inner" role="listbox" id="carouselInner">
+                <!-- <div
+                  v-for="(project,index) in projects"
+                  class="carousel-item"
+                  :class="{'active' : project.id === 1}"
+                >
+                  <div class="col-md-4 position-relative d-flex">
+                    <div class="hover_portfolio">
+                      <h4>{{project.name}}</h4>
+                    </div>
+                    <img :src="project.img" class="d-block img-fluid mx-auto" />
+                  </div>
+                </div> -->
+
+                <div class="carousel-item active">
+                  <div class="col-md-4 position-relative d-flex">
+                    <div class="hover_portfolio">
+                      <h4>Nom du client</h4>
+                    </div>
+                    <img
+                      src="Ressources/img/portfolio/portfolio-1.jpg"
+                      class="d-block img-fluid mx-auto"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-4 position-relative d-flex">
+                    <div class="hover_portfolio">
+                      <h4>Nom du client</h4>
+                    </div>
+                    <img
+                      src="Ressources/img/portfolio/portfolio-2.jpg"
+                      class="d-block img-fluid mx-auto"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-4 position-relative d-flex">
+                    <div class="hover_portfolio">
+                      <h4>Nom du client</h4>
+                    </div>
+                    <img
+                      src="Ressources/img/portfolio/portfolio-3.png"
+                      class="d-block img-fluid mx-auto"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-4 position-relative d-flex">
+                    <div class="hover_portfolio">
+                      <h4>Nom du client</h4>
+                    </div>
+                    <img
+                      src="Ressources/img/portfolio/portfolio-4.jpg"
+                      class="d-block img-fluid mx-auto"
+                    />
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="col-md-4 position-relative d-flex">
+                    <div class="hover_portfolio">
+                      <h4>Nom du client</h4>
+                    </div>
+                    <img
+                      src="Ressources/img/portfolio/portfolio-5.jpg"
+                      class="d-block img-fluid mx-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="contact" class="d-flex">
         <img
@@ -132,34 +244,40 @@
     </main>
     <footer>
       <div class="d-flex justify-content-around">
-      <ul>
-        <li class="mb-1">
-          <a href="#a_propos">A PROPOS</a>
-        </li=>
-        <li class="mb-1">
-          <a href="#service">SERVICES</a>
-        </li>
-        <li class="mb-1">
-          <a href="#portfolio">PORTFOLIO</a>
-        </li>
-        <li class="mb-1">
-          <a href="contact.html">CONTACT</a>
-        </li>
-      </ul>
-      <div>
-        <a href="https://goo.gl/maps/6nRfodiXMoZB852E6" target="_blank">
-        <h4 class="mb-4">Localisation</h4>
-        <p>Rue Joseph Marie Jacquard</p>
-        <p>35590, SAINT-GILLES</p>
-      </a>
+        <ul>
+          <li class="mb-1">
+            <a href="#a_propos">A PROPOS</a>
+          </li>
+          <li class="mb-1">
+            <a href="#service">SERVICES</a>
+          </li>
+          <li class="mb-1">
+            <a href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="mb-1">
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+        <div>
+          <a href="https://goo.gl/maps/6nRfodiXMoZB852E6" target="_blank">
+            <h4 class="mb-4">Localisation</h4>
+            <p>Rue Joseph Marie Jacquard</p>
+            <p>35590, SAINT-GILLES</p>
+          </a>
+        </div>
       </div>
-    </div>
-      <div class="footer_links">ADBgraphisme © | Tous droits réservés | Mention légales | CGV</div>
+      <div class="footer_links">
+        ADBgraphisme © | Tous droits réservés | Mention légales | CGV
+      </div>
     </footer>
 
     <div id="scrollToTop">
       <div id="scrollProgress"></div>
-      <img src="Ressources/img/scrollToTop.png" alt="Scroll to top" id="scrollImg">  
+      <img
+        src="Ressources/img/scrollToTop.png"
+        alt="Scroll to top"
+        id="scrollImg"
+      />
     </div>
 
     <script
@@ -167,7 +285,22 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+      integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+    <script src="JS/decode.js"></script>
+    <script src="JS/portfolio.js"></script>
     <script src="/JS/script.js"></script>
   </body>
 </html>

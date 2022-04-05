@@ -1,27 +1,32 @@
 {
   "project1": {
-    "project_name": "project1",
-    "customer_name": "client1",
-    "portfolio_img": "portfolio-1.jpg"
+    "id": 1,
+    "name": "project1",
+    "customer": "client1",
+    "img": "Ressources/img/portfolio/portfolio-1.jpg"
   },
   "project2": {
-    "project_name": "project2",
-    "customer_name": "client2",
-    "portfolio_img": "portfolio-2.jpg"
+    "id": 2,
+    "name": "project2",
+    "customer": "client2",
+    "img": "Ressources/img/portfolio/portfolio-2.jpg"
   },
   "project3": {
-    "project_name": "project3",
-    "customer_name": "client3",
-    "portfolio_img": "portfolio-3.jpg"
+    "id": 3,
+    "name": "project3",
+    "customer": "client3",
+    "img": "Ressources/img/portfolio/portfolio-3.png"
   },
   "project4": {
-    "project_name": "project4",
-    "customer_name": "client4",
-    "portfolio_img": "portfolio-4.jpg"
+    "id": 4,
+    "name": "project4",
+    "customer": "client4",
+    "img": "Ressources/img/portfolio/portfolio-4.jpg"
   },
   "project5": {
-    "project_name": "project5",
-    "customer_name": "client5",
-    "portfolio_img": "portfolio-5.jpg"
+    "id": 5,
+    "name": "project5",
+    "customer": "client5",
+    "img": "Ressources/img/portfolio/portfolio-5.jpg"
   }
 }
