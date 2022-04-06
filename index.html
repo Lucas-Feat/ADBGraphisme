@@ -17,13 +17,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/portfolio.css" />
+    <link rel="stylesheet" href="CSS/portfolio-carousel.css" />
     <title>ADB Graphisme</title>
   </head>
   <body>
     <header class="row">
       <div id="menu" class="col-sm-12 col-md-8 px-5 pt-4">
-        <img src="Ressources/img/logo.webp" alt="ADBGraphisme" />
+        <img src="Ressources/img/logo.webp" alt="ADBGraphisme" id="logo" />
         <div id="jobs">
           <h1>ADB GRAPHISME</h1>
           <span id="typewriter" class="h2"></span>
@@ -31,13 +31,13 @@
         <nav>
           <ul>
             <li class="mb-4">
-              <a href="#a_propos" class="menu_link">A PROPOS</a>
+              <a href="#a_propos" class="menu_link scollLink">A PROPOS</a>
             </li>
             <li class="mb-4">
-              <a href="#service" class="menu_link">SERVICES</a>
+              <a href="#service" class="menu_link scrollLink">SERVICES</a>
             </li>
             <li class="mb-4">
-              <a href="#portfolio" class="menu_link">PORTFOLIO</a>
+              <a href="#portfolio" class="menu_link scrollLink">PORTFOLIO</a>
             </li>
             <li class="mb-4">
               <a href="contact.html" class="menu_link">CONTACT</a>
@@ -132,7 +132,7 @@
         </div>
       </div>
       <div id="portfolio">
-        <h3>PORTFOLIO</h3>
+        <a href="portfolio.html"><h3>PORTFOLIO</h3></a>
         <div class="container" id="featureContainer">
           <div class="row mx-auto my-auto justify-content-center">
             <div
@@ -254,13 +254,13 @@
       <div class="d-flex justify-content-around">
         <ul>
           <li class="mb-1">
-            <a href="#a_propos">A PROPOS</a>
+            <a href="#a_propos" class="scollLink">A PROPOS</a>
           </li>
           <li class="mb-1">
-            <a href="#service">SERVICES</a>
+            <a href="#service" class="scollLink">SERVICES</a>
           </li>
           <li class="mb-1">
-            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#portfolio" class="scollLink">PORTFOLIO</a>
           </li>
           <li class="mb-1">
             <a href="contact.html">CONTACT</a>
@@ -308,7 +308,7 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
     <script src="JS/decode.js"></script>
-    <script src="JS/portfolio.js"></script>
+    <script src="JS/portfolio-carousel.js"></script>
     <script src="/JS/script.js"></script>
   </body>
 </html>

@@ -161,8 +161,9 @@ h3 {
   font-weight: bolder;
 }
 
-#menu img {
+#logo {
   height: 150px;
+  transition: 0.2s ease;
 }
 
 .menu_link {
@@ -182,6 +183,10 @@ h3 {
 }
 
 /*----CAROUSEL------*/
+
+#portfolio a {
+  text-decoration: none;
+}
 
 /*--------APROPOS------*/
 

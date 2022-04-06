@@ -1,20 +1,26 @@
-let items = document.querySelectorAll(
-  "#featureContainer .carousel .carousel-item"
-);
-items.forEach((el) => {
-  const minPerSlide = 3;
-  let next = el.nextElementSibling;
-  for (var i = 1; i < minPerSlide; i++) {
-    if (!next) {
-      // wrap carousel by using first child
-      next = items[0];
-    }
-    let cloneChild = next.cloneNode(true);
-    el.appendChild(cloneChild.children[0]);
-    next = next.nextElementSibling;
+let hidebar = () => {
+  let pos = document.documentElement.scrollTop;
+  if (pos < 200) {
+    document.getElementById("header").style.transform = "translateY(-200px)";
+  } else {
+    document.getElementById("header").style.transform = "translateY(0)";
   }
+};
+
+let shownav = () => {
+  console.log("in");
+  document.getElementById("header").style.transform = "translateY(0)";
+};
+let hidenav = () => {
+  console.log("out");
+  document.getElementById("header").style.transform = "translateY(-200px)";
+};
+
+document.getElementById("logo").addEventListener("mouseover", () => {
+  console.log("in");
+  shownav();
 });
-$(document).ready(function () {
-  $("#featureCarousel").carousel({ interval: false });
-  $("#featureCarousel").carousel("pause");
+document.getElementById("header").addEventListener("mouseleave", () => {
+  console.log("out");
+  hidenav();
 });

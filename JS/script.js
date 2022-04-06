@@ -1,3 +1,18 @@
+/*--------------SMOOTH INTERNAL LINK------------------*/
+
+$(document).ready(function () {
+  $("a.scrollLink").click(function (event) {
+    event.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top,
+      },
+      500
+    );
+  });
+});
+
+/*-------------TEXT ANIMATION------------*/
 const txtAnim = document.querySelector("#typewriter");
 
 new Typewriter(txtAnim, {
@@ -16,8 +31,13 @@ new Typewriter(txtAnim, {
   .deleteChars(15)
   .start();
 
+/*---------------SCROLL TO TOP-----------------*/
 document.getElementById("scrollToTop").addEventListener("click", () => {
-  window.scrollTo(0, 0);
+  document.documentElement.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+    inline: "start",
+  });
 });
 document.getElementById("scrollToTop").style.cursor = "pointer";
 
