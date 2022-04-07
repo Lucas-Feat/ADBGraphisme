@@ -40,20 +40,20 @@
       <a href="tel:+33669797089">06 69 79 70 89</a>
       <a href="mailto:adb.graph@gmail.com">adb.graph@gmail.com</a>
     </div>
-    <form action="" method="post">
+    <form id="contactform">
       <label for="name">VOTRE NOM</label>
-      <input type="text" required />
+      <input type="text" id="name" required />
       <label for="mail">VOTRE ADRESSE E-MAIL</label>
-      <input type="mail" required />
+      <input type="email" id="mail" required />
       <label for="object">OBJET</label>
-      <input type="text" />
+      <input type="text" id="object"/>
       <label for="message">VOTRE MESSAGE</label>
       <textarea name="message" id="message" cols="30" rows="10"></textarea>
       <input type="submit" value="ENVOYER" name="submit" />
     </form>
 
     <footer>
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-around ">
+        <div class="d-flex flex-column flex-md-row justify-content-md-around ">
         <ul>
           <li class="mb-1">
             <a href="index.html#a_propos">A PROPOS</a>
@@ -64,11 +64,11 @@
           <li class="mb-1">
             <a href="index.html#portfolio">PORTFOLIO</a>
           </li>
-          <li class="mb-1">
+          <li class="mb-3">
             <a href="contact.html">CONTACT</a>
           </li>
         </ul>
-        <div class="text-center"> 
+        <div> 
           <a href="https://goo.gl/maps/6nRfodiXMoZB852E6" target="_blank">
           <h4 class="mb-4">Localisation</h4>
           <p>Rue Joseph Marie Jacquard</p>
@@ -78,5 +78,8 @@
       </div class="mt-4">
         <div class="footer_links">ADBgraphisme © | Tous droits réservés | Mention légales | CGV</div>
       </footer>
+
+      
+      <script src="JS/contact.js"></script>
   </body>
 </html>
