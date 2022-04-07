@@ -14,7 +14,7 @@ function getValue(id) {
 
 function sendEmail(name, mail, object, message) {
   $.ajax({
-    url: "https://formsubmit.co/ajax/adb-graph@gmail.com",
+    url: "https://formsubmit.co/ajax/adb.graph@gmail.com",
     method: "POST",
     data: {
       name: name,
