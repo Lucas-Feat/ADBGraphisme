@@ -152,7 +152,7 @@ h3 {
   font-family: raleway, sans-serif;
   font-style: normal;
   color: #e93119;
-  font-size: 2em;
+  font-size: 4vh;
 }
 
 #typewriter {
@@ -193,7 +193,7 @@ h3 {
 h3 {
   text-align: center;
   font-weight: 500;
-  font-size: 3em;
+  font-size: 4vh;
   margin: 10% 0 3% 0;
 }
 

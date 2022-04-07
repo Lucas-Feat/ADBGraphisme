@@ -3,8 +3,7 @@
   transform: translateY(-200px);
   width: 100%;
   transition: 0.2s ease;
-  height: 170px;
-  opacity: 0.8;
+  height: 150px;
 }
 
 #banniere {
